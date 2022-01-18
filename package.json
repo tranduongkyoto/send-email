@@ -4,9 +4,10 @@
   "description": "Sample app using nodemailer",
   "main": "app.js",
   "scripts": {
+     "predeploy":"npm run build",
+    "deploy":"gh-pages -d build",
     "start": "nodemon app",
-    "predeploy":"npm run build",
-    "deploy":"gh-pages -d build"
+    "build":"nodemon app"
   },
   "author": "",
   "license": "MIT",
